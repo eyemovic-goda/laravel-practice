@@ -1,19 +1,23 @@
 # Laravelの勉強用Git
 
-**後で編集する**
+## 各ファイルの権限を変更
+```
+chmod -R 777 logs src/storage/logs start_up.sh
+```
 
-`chmod 777 start_up.sh`
+## ルートディレクトリの.env.exampleをコピーし、.envというファイル名で保存
+`cp ./.env.example ./.env`
 
-ルートディレクトリの
-.env.exampleをコピーし、.envというファイル名で保存
+## Dockerの立ち上げ
+`docker-compose up -d --build`
 
+## Dockerコンテナ内にLaravelファイルを準備
+```
+./start_up.sh
+```
 
-[参考URL](https://qiita.com/ucan-lab/items/56c9dc3cf2e6762672f4#laravel%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
+## Docker環境の破棄
+```
+docker-compose down --volumes --rmi all
+```
 
-docker-compose exec app ash
-
-composer install
-
-cp .env.example .env
-
-php artisan key:generate
