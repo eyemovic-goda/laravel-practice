@@ -2,6 +2,8 @@
 
 **後で編集する**
 
+`chmod 777 start_up.sh`
+
 ルートディレクトリの
 .env.exampleをコピーし、.envというファイル名で保存
 
