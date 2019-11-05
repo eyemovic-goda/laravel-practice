@@ -6,7 +6,7 @@ ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_HOME /composer
 
 RUN set -eux
-RUN  apk add --update-cache --no-cache --virtual=.build-dependencies tzdata
+RUN apk add --update-cache --no-cache --virtual=.build-dependencies tzdata
 RUN cp /usr/share/zoneinfo/${TZ} /etc/localtime
 RUN apk del .build-dependencies
 RUN docker-php-ext-install bcmath pdo_mysql
