@@ -1,5 +1,8 @@
 # Laravelの勉強用Git
 
+Macでしか実行していないです。
+
+
 ## 各ファイルの権限を変更
 ```
 chmod -R 777 logs src/storage/logs start_up.sh
