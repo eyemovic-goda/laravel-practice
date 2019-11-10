@@ -5,7 +5,7 @@
 MAC
 chmod -R 777 logs src/storage/logs start_up.sh
 
-Window 
+Windows
 不要？
 ```
 
