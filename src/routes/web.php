@@ -14,6 +14,11 @@ use Illuminate\Http\Request;
 
 Route::resource("book", "BookController");
 
+Route::get("goda",function (){
+   var_dump("test");
+   return;
+});
+
 
 // Auth::routes();
 //

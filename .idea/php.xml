@@ -87,6 +87,9 @@
       <path value="$PROJECT_DIR$/src/vendor/sebastian/object-enumerator" />
       <path value="$PROJECT_DIR$/src/vendor/sebastian/object-reflector" />
       <path value="$PROJECT_DIR$/src/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/dbal" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7" />
