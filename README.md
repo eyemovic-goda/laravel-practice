@@ -1,5 +1,11 @@
 # Laravel5.8の勉強用Git
 
+## Laravelプロジェクト作成
+```
+docker-compose exec app composer create-project --prefer-dist "laravel/laravel=5.8.*" .
+docker-compose exec app composer require predis/predis
+```
+
 ## 各ファイルの権限を変更
 ```
 MAC
