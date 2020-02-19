@@ -1,4 +1,4 @@
-# Laravel5.8の勉強用Git
+# Laravel5.8の勉強用Gita
 
 ## Laravelプロジェクト作成
 ```
