@@ -16,3 +16,20 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+$html = <<<EOF
+<html>
+<head>
+<title>hallo</title>
+
+<body>
+<h1>hallo</h1>
+</body>
+</head>
+</html>
+EOF;
+
+Route::get("goda", function () use ($html) {
+    return $html;
+});
