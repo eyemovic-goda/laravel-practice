@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="879f62f8-402d-40fb-8d8d-ff6740b79353" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +152,7 @@
       <workItem from="1587424971244" duration="131000" />
       <workItem from="1587451741746" duration="765000" />
       <workItem from="1587454327895" duration="6095000" />
-      <workItem from="1587474549392" duration="312000" />
+      <workItem from="1587474549392" duration="3036000" />
     </task>
     <task id="LOCAL-00001" summary="テスト">
       <created>1582155805735</created>
@@ -179,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587460004729</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="htmlを挿入する">
+      <created>1587475426598</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587475426598</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,13 +200,19 @@
     <MESSAGE value="不要ファイルを削除" />
     <MESSAGE value="ideaファイルをコミット" />
     <MESSAGE value="npmやcomposerコマンドが通り、serveできたところまで。" />
-    <option name="LAST_COMMIT_MESSAGE" value="npmやcomposerコマンドが通り、serveできたところまで。" />
+    <MESSAGE value="htmlを挿入する" />
+    <option name="LAST_COMMIT_MESSAGE" value="htmlを挿入する" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-893" y="126" key="CommitChangelistDialog2" timestamp="1587460004215">
-      <screen x="-1920" y="23" width="1920" height="1057" />
+    <state x="1027" y="126" key="CommitChangelistDialog2" timestamp="1587475426275">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="-893" y="126" key="CommitChangelistDialog2/-664.1103.1440.877/-1920.23.1920.1057/0.23.1920.1057@-1920.23.1920.1057" timestamp="1587460004215" />
+    <state x="1027" y="126" key="CommitChangelistDialog2/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1587475426275" />
+    <state x="384" y="118" key="DiffContextDialog" timestamp="1587475422386">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="384" y="118" key="DiffContextDialog/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1587475422386" />
     <state width="918" height="290" key="GridCell.Tab.0.bottom" timestamp="1587474532813">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
@@ -221,23 +237,25 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1261" y="482" key="NewPhpFileDialog/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1587474411059" />
-    <state x="388" y="195" key="SettingsEditor" timestamp="1587474528788">
+    <state x="388" y="195" key="SettingsEditor" timestamp="1587476466013">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="388" y="195" key="SettingsEditor/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1587454549071" />
-    <state x="388" y="195" key="SettingsEditor/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1587474528788" />
-    <state x="-880" y="291" key="Vcs.Push.Dialog.v2" timestamp="1587460008043">
-      <screen x="-1920" y="23" width="1920" height="1057" />
+    <state x="388" y="195" key="SettingsEditor/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1587476466013" />
+    <state x="1040" y="291" key="Vcs.Push.Dialog.v2" timestamp="1587475428351">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="-880" y="291" key="Vcs.Push.Dialog.v2/-664.1103.1440.877/-1920.23.1920.1057/0.23.1920.1057@-1920.23.1920.1057" timestamp="1587460008043" />
+    <state x="1040" y="291" key="Vcs.Push.Dialog.v2/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1587475428351" />
     <state x="1140" y="308" width="637" height="486" key="find.popup" timestamp="1587457906864">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1140" y="308" width="637" height="486" key="find.popup/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1587457906864" />
-    <state x="-815" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1587459975087">
-      <screen x="-1920" y="23" width="1920" height="1057" />
+    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1587477951943">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="-815" y="258" width="670" height="676" key="search.everywhere.popup/-664.1103.1440.877/-1920.23.1920.1057/0.23.1920.1057@-1920.23.1920.1057" timestamp="1587459975087" />
+    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1587477951943" />
   </component>
   <component name="masterDetails">
     <states>

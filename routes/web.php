@@ -18,18 +18,4 @@ Route::get('/', function () {
 });
 
 
-$html = <<<EOF
-<html>
-<head>
-<title>hallo</title>
-
-<body>
-<h1>hallo</h1>
-</body>
-</head>
-</html>
-EOF;
-
-Route::get("goda", function () use ($html) {
-    return $html;
-});
+Route::get("/goda", "HelloController@index");
