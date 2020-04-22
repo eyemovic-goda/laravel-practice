@@ -1,8 +1,8 @@
-<p>{{$msg}}</p>
-
-{{"<p>おお</p>"}}
-
-{!!"<p>$msg</p>"!!}
+@isset($msg)
+    {{$msg}}
+@else
+    {!! "<p>なんか書かいて</p>" !!}
+@endisset
 
 <form method="post" action="/hello">
     @csrf
