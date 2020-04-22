@@ -17,4 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get("/goda/{msg?}", "helloController");
+Route::get("/goda", "helloController@index");
+Route::post("/hello", "helloController@post");
