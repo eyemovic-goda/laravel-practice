@@ -1,11 +1,14 @@
-@isset($msg)
-    {{$msg}}
-@else
-    {!! "<p>なんか書かいて</p>" !!}
-@endisset
+<ul>
+    @php
+        $counter=0;
+    @endphp
 
-<form method="post" action="/hello">
-    @csrf
-    <input type="text" name="msg">
-    <input type="submit">
-</form>
+    @while($counter<count($data))
+        <li>
+            {{$data[$counter]}}
+        </li>
+
+        @php($counter++)
+
+    @endwhile
+</ul>
