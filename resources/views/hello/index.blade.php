@@ -1,14 +1,22 @@
-<ul>
-    @php
-        $counter=0;
-    @endphp
+@extends("layout.helloapp")
 
-    @while($counter<count($data))
-        <li>
-            {{$data[$counter]}}
-        </li>
+@section("title","Index")
 
-        @php($counter++)
+@section("menubar")
+    @parent
+    テストです</li>
+    <li>まじ？</li>
+    </ul>
 
-    @endwhile
-</ul>
+    @parent
+    おお
+@endsection
+
+@section("content")
+    <p>本文</p>
+    <p>コンテンツ</p>
+@endsection
+
+@section("footer")
+    copyright 2020 goda
+@endsection
