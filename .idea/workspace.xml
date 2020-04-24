@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="879f62f8-402d-40fb-8d8d-ff6740b79353" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/resources/views/components/message.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layout/helloapp.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/hello/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/hello/index.blade.php" afterDir="false" />
     </list>
@@ -160,7 +159,7 @@
       <workItem from="1587454327895" duration="6095000" />
       <workItem from="1587474549392" duration="10011000" />
       <workItem from="1587646483224" duration="2877000" />
-      <workItem from="1587730655335" duration="1997000" />
+      <workItem from="1587730655335" duration="3347000" />
     </task>
     <task id="LOCAL-00001" summary="テスト">
       <created>1582155805735</created>
@@ -232,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587648841010</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="yield,section,showを学習">
+      <created>1587738799374</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1587738799374</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,13 +256,15 @@
     <MESSAGE value="POSTで値を送信できるところまで" />
     <MESSAGE value="ifやissetを体験" />
     <MESSAGE value="@whileや@phpを学習" />
-    <option name="LAST_COMMIT_MESSAGE" value="@whileや@phpを学習" />
+    <MESSAGE value="section,showを学習" />
+    <MESSAGE value="yield,section,showを学習" />
+    <option name="LAST_COMMIT_MESSAGE" value="yield,section,showを学習" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1027" y="126" key="CommitChangelistDialog2" timestamp="1587648840621">
+    <state x="1027" y="126" key="CommitChangelistDialog2" timestamp="1587738798931">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="1027" y="126" key="CommitChangelistDialog2/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1587648840621" />
+    <state x="1027" y="126" key="CommitChangelistDialog2/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1587738798931" />
     <state x="-893" y="126" key="CommitChangelistDialog2/-664.1103.1440.877/-1920.23.1920.1057/0.23.1920.1057@-1920.23.1920.1057" timestamp="1587460004215" />
     <state x="1027" y="126" key="CommitChangelistDialog2/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1587523930159" />
     <state x="384" y="118" key="DiffContextDialog" timestamp="1587475422386">
@@ -292,20 +300,20 @@
     </state>
     <state x="388" y="195" key="SettingsEditor/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1587648027136" />
     <state x="388" y="195" key="SettingsEditor/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1587517944076" />
-    <state x="1040" y="291" key="Vcs.Push.Dialog.v2" timestamp="1587648842193">
+    <state x="1040" y="291" key="Vcs.Push.Dialog.v2" timestamp="1587738800934">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="1040" y="291" key="Vcs.Push.Dialog.v2/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1587648842193" />
+    <state x="1040" y="291" key="Vcs.Push.Dialog.v2/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1587738800934" />
     <state x="-880" y="291" key="Vcs.Push.Dialog.v2/-664.1103.1440.877/-1920.23.1920.1057/0.23.1920.1057@-1920.23.1920.1057" timestamp="1587460008043" />
     <state x="1040" y="291" key="Vcs.Push.Dialog.v2/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1587523931691" />
     <state x="1140" y="308" width="637" height="486" key="find.popup" timestamp="1587457906864">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1140" y="308" width="637" height="486" key="find.popup/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1587457906864" />
-    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1587648822881">
+    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1587738231049">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1587648822881" />
+    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1587738231049" />
     <state x="-815" y="258" width="670" height="676" key="search.everywhere.popup/-664.1103.1440.877/-1920.23.1920.1057/0.23.1920.1057@-1920.23.1920.1057" timestamp="1587459975087" />
     <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1587523915269" />
   </component>

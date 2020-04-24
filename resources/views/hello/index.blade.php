@@ -4,17 +4,15 @@
 
 @section("menubar")
     @parent
-    テストです</li>
-    <li>まじ？</li>
-    </ul>
-
-    @parent
-    おお
+    テストです
 @endsection
 
 @section("content")
-    <p>本文</p>
-    <p>コンテンツ</p>
+    <p>これが本文のコンテンツです</p>
+
+    @include("components.message",["msg_title"=>"タイトルだす",
+"msg_content"=>"コンテンと"])
+
 @endsection
 
 @section("footer")
