@@ -18,5 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get("/goda", "helloController@index")->middleware(HelloMiddleware::class);
+Route::get("/goda", "helloController@index")->middleware("hello");
 Route::post("/hello", "helloController@post");
