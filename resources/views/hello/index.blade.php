@@ -4,29 +4,55 @@
 
 @section("menubar")
     @parent
-    テストです
+    メニューバー
 @endsection
 
 @section("content")
-    <p>これが本文のコンテンツですね</p>
+    <p>{{$msg}}</p>
 
-    {{--    @include("components.message",["msg_title"=>"タイトルだす",--}}
-    {{--"msg_content"=>"コンテンと"])--}}
+    @if(count($errors)>0)
+        <p>エラーがありますよー</p>
+    @endif
 
-    {{--    <ul>--}}
-    {{--        @each("components.item",$data,"item")--}}
-    {{--    </ul>--}}
-
-    {{--    <p>びゅーめっせーじ={{$view_message}}</p>--}}
-
-    <p>これは、
-        <middleware>google.com</middleware>
-        へのリンク
-    </p>
-    <p>これは、
-        <middleware>yahoo.co.jp</middleware>
-        へのリンク
-    </p>
+    <form action="/hello" method="post">
+        <table>
+            @csrf
+            @error("name")
+            <tr>
+                <th>ERROR</th>
+                <td>{{$message}}</td>
+            </tr>
+            @enderror
+            <tr>
+                <th>name:</th>
+                <td><input type="text" name="name" value="{{old("name")}}"></td>
+            </tr>
+            @error("mail")
+            <tr>
+                <th>ERROR</th>
+                <td>{{$message}}</td>
+            </tr>
+            @enderror
+            <tr>
+                <th>mail:</th>
+                <td><input type="text" name="mail" value="{{old("mail")}}"></td>
+            </tr>
+            @error("age")
+            <tr>
+                <th>ERROR</th>
+                <td>{{$message}}</td>
+            </tr>
+            @enderror
+            <tr>
+                <th>age:</th>
+                <td><input type="text" name="age" value="{{old("age")}}"></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><input type="submit" value="send"></td>
+            </tr>
+        </table>
+    </form>
 @endsection
 
 @section("footer")
