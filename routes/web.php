@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\HelloMiddleware;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,5 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get("/goda", "helloController@index");
+Route::get("/goda", "helloController@index")->middleware(HelloMiddleware::class);
 Route::post("/hello", "helloController@post");

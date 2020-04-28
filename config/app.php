@@ -175,6 +175,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        \App\Providers\HelloServiceProvider::class,
+
         // Laravel IDE helper
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',

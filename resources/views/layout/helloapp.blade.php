@@ -15,6 +15,7 @@
     </div>
 
     <div style="color: red">
+        <hr>
         @yield("footer")
     </div>
 
