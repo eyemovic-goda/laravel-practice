@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\Rules\Myrule;
 use Illuminate\Foundation\Http\FormRequest;
 
 class HelloRequest extends FormRequest
@@ -13,7 +14,7 @@ class HelloRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return $this->path() == "hello";
     }
 
     /**
@@ -24,7 +25,19 @@ class HelloRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            "name" => "required",
+            "mail" => "email",
+            "age" => ["numeric", new Myrule(5)]
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            "name.required" => "名前は必ず入力して",
+            "mail.email" => "メールの形で",
+            "age.numeric" => "すうじで",
+            "age.between" => "指定の形で"
         ];
     }
 }

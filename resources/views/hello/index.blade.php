@@ -8,10 +8,11 @@
 @endsection
 
 @section("content")
-    <p>{{$msg}}</p>
 
     @if(count($errors)>0)
         <p>エラーがありますよー</p>
+    @else
+        <p>{{$msg}}</p>
     @endif
 
     <form action="/hello" method="post">

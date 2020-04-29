@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\HelloRequest;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Validator;
 
 class HelloController extends Controller
 {
@@ -12,15 +14,8 @@ class HelloController extends Controller
         return view("hello.index", ["msg" => "フォーム入力して"]);
     }
 
-    public function post(Request $request)
+    public function post(HelloRequest $request)
     {
-        $validate_rule = [
-            "name" => "required|numeric",
-            "mail" => "email",
-            "age" => "numeric|between:0,150"
-        ];
-
-        $this->validate($request, $validate_rule);
         return view("hello.index", ["msg" => "正しく入力できました"]);
     }
 }
