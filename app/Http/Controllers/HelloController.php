@@ -11,11 +11,23 @@ class HelloController extends Controller
 {
     public function index(Request $request)
     {
-        return view("hello.index", ["msg" => "フォーム入力して"]);
+        $msg = "cookieは存在しません。";
+        if ($request->hasCookie("msg")) {
+            $msg = "cookie:" . $request->cookie("msg");
+        }
+
+        return view("hello.index", ["msg" => $msg]);
     }
 
     public function post(HelloRequest $request)
     {
-        return view("hello.index", ["msg" => "正しく入力できました"]);
+        $msg = $request->name;
+
+        // cookieに保存したものをreturnしないと、保存してくれないので、
+        // responseメソッドｗお仕様する。
+        $response = response()->view("hello.index", ["msg" => $msg . "をくっきに"]);
+        $response->cookie("msg", $msg, 10);
+
+        return $response;
     }
 }
