@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="879f62f8-402d-40fb-8d8d-ff6740b79353" name="Default Changelist" comment="cookieの使い方">
+    <list default="true" id="879f62f8-402d-40fb-8d8d-ff6740b79353" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HelloController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HelloController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/hello/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/hello/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +163,7 @@
       <workItem from="1587730655335" duration="8422000" />
       <workItem from="1587993481362" duration="2533000" />
       <workItem from="1588039045104" duration="12778000" />
-      <workItem from="1588251376715" duration="1235000" />
+      <workItem from="1588251376715" duration="2100000" />
     </task>
     <task id="LOCAL-00001" summary="テスト">
       <created>1582155805735</created>
@@ -284,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588165958425</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="DBのセレクト文を学習">
+      <created>1588252724742</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1588252724742</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,7 +317,8 @@
     <MESSAGE value="バリデーション学びの途中" />
     <MESSAGE value="バリデーションのルール作成を学習" />
     <MESSAGE value="cookieの使い方" />
-    <option name="LAST_COMMIT_MESSAGE" value="cookieの使い方" />
+    <MESSAGE value="DBのセレクト文を学習" />
+    <option name="LAST_COMMIT_MESSAGE" value="DBのセレクト文を学習" />
   </component>
   <component name="WindowStateProjectService">
     <state x="705" y="388" key="#SQL_Dialects" timestamp="1588252062646">
@@ -321,12 +329,12 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1040" y="217" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1588252040681" />
-    <state x="1027" y="126" key="CommitChangelistDialog2" timestamp="1588167488287">
+    <state x="1027" y="126" key="CommitChangelistDialog2" timestamp="1588252724239">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1027" y="126" key="CommitChangelistDialog2/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1588167488287" />
     <state x="-893" y="126" key="CommitChangelistDialog2/-664.1103.1440.877/-1920.23.1920.1057/0.23.1920.1057@-1920.23.1920.1057" timestamp="1587460004215" />
-    <state x="1027" y="126" key="CommitChangelistDialog2/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1587523930159" />
+    <state x="1027" y="126" key="CommitChangelistDialog2/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1588252724239" />
     <state x="384" y="118" key="DiffContextDialog" timestamp="1587475422386">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
@@ -360,21 +368,21 @@
     </state>
     <state x="388" y="195" key="SettingsEditor/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1587648027136" />
     <state x="388" y="195" key="SettingsEditor/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1587517944076" />
-    <state x="1040" y="291" key="Vcs.Push.Dialog.v2" timestamp="1588165960465">
+    <state x="1040" y="291" key="Vcs.Push.Dialog.v2" timestamp="1588252726192">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1040" y="291" key="Vcs.Push.Dialog.v2/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1588165960465" />
     <state x="-880" y="291" key="Vcs.Push.Dialog.v2/-664.1103.1440.877/-1920.23.1920.1057/0.23.1920.1057@-1920.23.1920.1057" timestamp="1587460008043" />
-    <state x="1040" y="291" key="Vcs.Push.Dialog.v2/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1587523931691" />
+    <state x="1040" y="291" key="Vcs.Push.Dialog.v2/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1588252726192" />
     <state x="1140" y="308" width="637" height="486" key="find.popup" timestamp="1588049011145">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1140" y="308" width="637" height="486" key="find.popup/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1588049011145" />
-    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1588252415311">
+    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1588252708741">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1588167484926" />
     <state x="-815" y="258" width="670" height="676" key="search.everywhere.popup/-664.1103.1440.877/-1920.23.1920.1057/0.23.1920.1057@-1920.23.1920.1057" timestamp="1587459975087" />
-    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1588252415311" />
+    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1588252708741" />
   </component>
 </project>
