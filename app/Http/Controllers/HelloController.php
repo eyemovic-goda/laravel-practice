@@ -12,7 +12,8 @@ class HelloController extends Controller
 {
     public function index(Request $request)
     {
-        $items = DB::select("select * from people");
+        $items = DB::table("people")->get(["age", "mail", "name"]);
+
         return view("hello.index", ["items" => $items]);
     }
 
@@ -30,16 +31,18 @@ class HelloController extends Controller
 
     public function add(Request $request)
     {
-        $params = [
-            "name" => $request->name,
-            "mail" => $request->mail,
-            "age" => $request->age];
-
-        DB::insert("insert into people(name,mail,age)
-values (:name,:mail,:age)", $params);
-
-        $items = DB::select("select * from people");
-        return view("hello.index", ["items" => $items]);
+//        return view("hello.index", ["items" => $items]);
     }
 
+    public function show(Request $request)
+    {
+        $text = $request->text;
+        $items = DB::table("people")
+            ->where("name", "like", "%" . $text . "%")
+            ->orWhere("mail", "like", "%" . $text . "%")
+            ->get();
+
+        return view("hello.show", ["items" => $items]);
+
+    }
 }
