@@ -63,4 +63,22 @@ class HelloController extends Controller
 
         return redirect()->route("hello.edit", ["id" => $request->id, "godaa" => "はげ"]);
     }
+
+    public function delete(Request $request)
+    {
+        $item = DB::table("people")
+            ->where("id", $request->id)
+            ->first();
+
+        return view("hello.delete", ["item" => $item]);
+    }
+
+    public function remove(Request $request)
+    {
+        DB::table("people")
+            ->where("id", $request->id)
+            ->delete();
+
+        return redirect("/hello");
+    }
 }
