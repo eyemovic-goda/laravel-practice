@@ -31,18 +31,36 @@ class HelloController extends Controller
 
     public function add(Request $request)
     {
-//        return view("hello.index", ["items" => $items]);
+        $params = ["age" => $request->age,
+            "mail" => $request->mail,
+            "name" => $request->name];
+
+        DB::table("people")->insert($params);
+
+        return redirect("/hello");
     }
 
-    public function show(Request $request)
+    public function edit(Request $request)
     {
-        $text = $request->text;
+        $id = $request->id;
+
         $items = DB::table("people")
-            ->where("name", "like", "%" . $text . "%")
-            ->orWhere("mail", "like", "%" . $text . "%")
+            ->where("id", $id)
             ->get();
 
-        return view("hello.show", ["items" => $items]);
+        return view("hello.show", ["items" => $items, "id" => $id]);
+    }
 
+    public function update(Request $request)
+    {
+        $params = ["age" => $request->age,
+            "mail" => $request->mail,
+            "name" => $request->name];
+
+        DB::table("people")
+            ->where("id", $request->id)
+            ->update($params);
+
+        return redirect()->route("hello.edit", ["id" => $request->id, "godaa" => "はげ"]);
     }
 }
