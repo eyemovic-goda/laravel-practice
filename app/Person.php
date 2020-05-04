@@ -2,8 +2,11 @@
 
 namespace App;
 
+use App\Scopes\ScopePerson;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Eloquent;
+use function foo\func;
 
 /**
  * App\Person
@@ -30,6 +33,19 @@ use Eloquent;
  */
 class Person extends Model
 {
+    protected static function boot()
+    {
+        parent::boot();
+
+        // グローバルスコープ
+        static::addGlobalScope("role", function (Builder $builder) {
+            $builder->where("age", ">", 10);
+        });
+
+        // スコープクラスバージョン
+        static::addGlobalScope(new ScopePerson);
+    }
+
     public function getData()
     {
         return $this->id . ":" . $this->name .
@@ -50,5 +66,4 @@ class Person extends Model
     {
         return $query->where("age", "<=", $str);
     }
-
 }
