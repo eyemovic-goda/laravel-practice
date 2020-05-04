@@ -33,23 +33,30 @@ use function foo\func;
  */
 class Person extends Model
 {
+
+    protected $guarded = ["id"];
+
+    public static $rules = [
+        "name" => "required",
+        "mail" => "email",
+        "age" => "integer|min:0|max:150"
+    ];
+
     protected static function boot()
     {
         parent::boot();
-
-        // グローバルスコープ
-        static::addGlobalScope("role", function (Builder $builder) {
-            $builder->where("age", ">", 10);
-        });
-
-        // スコープクラスバージョン
-        static::addGlobalScope(new ScopePerson);
+//        // グローバルスコープ
+//        static::addGlobalScope("role", function (Builder $builder) {
+//            $builder->where("age", ">", 10);
+//        });
+//
+//        // スコープクラスバージョン
+//        static::addGlobalScope(new ScopePerson);
     }
 
     public function getData()
     {
-        return $this->id . ":" . $this->name .
-            "(" . $this->age . ")";
+        return $this->id . ":" . $this->name . "(" . $this->age . ")";
     }
 
     public function scopeNameEqual($query, $str)

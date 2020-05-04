@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="879f62f8-402d-40fb-8d8d-ff6740b79353" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Scopes/ScopePerson.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/person/add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PersonController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PersonController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Person.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Person.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +188,7 @@
       <workItem from="1588039045104" duration="12778000" />
       <workItem from="1588251376715" duration="2100000" />
       <workItem from="1588339686556" duration="2994000" />
-      <workItem from="1588511453761" duration="15445000" />
+      <workItem from="1588511453761" duration="18741000" />
     </task>
     <task id="LOCAL-00001" summary="テスト">
       <created>1582155805735</created>
@@ -360,15 +379,32 @@
       <option name="project" value="LOCAL" />
       <updated>1588582840112</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="255 グローバルスコープ学習">
+      <created>1588596838801</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1588596838801</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="npmやcomposerコマンドが通り、serveできたところまで。" />
     <MESSAGE value="htmlを挿入する" />
     <MESSAGE value="laravel-ide-helperを導入" />
     <MESSAGE value="生PHPで値を表示するところまで" />
@@ -393,7 +429,8 @@
     <MESSAGE value="eloquentを使ってみた。" />
     <MESSAGE value="245 findメソッドでID検索" />
     <MESSAGE value="251 ローカルスコープを実装" />
-    <option name="LAST_COMMIT_MESSAGE" value="251 ローカルスコープを実装" />
+    <MESSAGE value="255 グローバルスコープ学習" />
+    <option name="LAST_COMMIT_MESSAGE" value="255 グローバルスコープ学習" />
   </component>
   <component name="WindowStateProjectService">
     <state x="705" y="388" key="#SQL_Dialects" timestamp="1588252062646">
@@ -409,10 +446,10 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1228" y="484" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1588570738309" />
-    <state x="1027" y="126" key="CommitChangelistDialog2" timestamp="1588582839794">
+    <state x="1027" y="126" key="CommitChangelistDialog2" timestamp="1588596838506">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="1027" y="126" key="CommitChangelistDialog2/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1588582839794" />
+    <state x="1027" y="126" key="CommitChangelistDialog2/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1588596838506" />
     <state x="-893" y="126" key="CommitChangelistDialog2/-664.1103.1440.877/-1920.23.1920.1057/0.23.1920.1057@-1920.23.1920.1057" timestamp="1587460004215" />
     <state x="855" y="123" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1588426429137" />
     <state x="1027" y="126" key="CommitChangelistDialog2/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1588252724239" />
@@ -454,23 +491,23 @@
     </state>
     <state x="388" y="195" key="SettingsEditor/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1587648027136" />
     <state x="388" y="195" key="SettingsEditor/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1587517944076" />
-    <state x="1040" y="291" key="Vcs.Push.Dialog.v2" timestamp="1588582841754">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state x="880" y="283" key="Vcs.Push.Dialog.v2" timestamp="1588597495816">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="1040" y="291" key="Vcs.Push.Dialog.v2/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1588582841754" />
+    <state x="1040" y="291" key="Vcs.Push.Dialog.v2/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1588596840150" />
     <state x="-880" y="291" key="Vcs.Push.Dialog.v2/-664.1103.1440.877/-1920.23.1920.1057/0.23.1920.1057@-1920.23.1920.1057" timestamp="1587460008043" />
-    <state x="880" y="283" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1588426431857" />
+    <state x="880" y="283" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1588597495816" />
     <state x="1040" y="291" key="Vcs.Push.Dialog.v2/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1588252726192" />
     <state x="1140" y="308" width="637" height="486" key="find.popup" timestamp="1588049011145">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1140" y="308" width="637" height="486" key="find.popup/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1588049011145" />
-    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1588596690662">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state x="967" y="251" width="670" height="657" key="search.everywhere.popup" timestamp="1588597494059">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1588596690662" />
+    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1588596812637" />
     <state x="-815" y="258" width="670" height="676" key="search.everywhere.popup/-664.1103.1440.877/-1920.23.1920.1057/0.23.1920.1057@-1920.23.1920.1057" timestamp="1587459975087" />
-    <state x="967" y="251" width="670" height="657" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1588426416807" />
+    <state x="967" y="251" width="670" height="657" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1588597494059" />
     <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1588252708741" />
   </component>
 </project>
