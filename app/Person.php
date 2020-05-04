@@ -24,6 +24,9 @@ use Eloquent;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Person whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Person whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Person nameEqual($str)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Person ageGreaterThan($str)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Person ageLessThan($str)
  */
 class Person extends Model
 {
@@ -32,4 +35,20 @@ class Person extends Model
         return $this->id . ":" . $this->name .
             "(" . $this->age . ")";
     }
+
+    public function scopeNameEqual($query, $str)
+    {
+        return $query->where("name", $str);
+    }
+
+    public function scopeAgeGreaterThan($query, $str)
+    {
+        return $query->where("age", ">=", $str);
+    }
+
+    public function scopeAgeLessThan($query, $str)
+    {
+        return $query->where("age", "<=", $str);
+    }
+
 }
