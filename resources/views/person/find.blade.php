@@ -4,20 +4,22 @@
 
 @section("menubar")
     @parent
-    インデックスページ
+    検索ページ
 @endsection
 
 @section("content")
-    @foreach($items as $item)
+    <form action="/person/find" method="post">
+        @csrf
+        <input type="text" name="input" value="{{$input}}">
+        <input type="submit" value="find">
+    </form>
 
+    @if(isset($item))
         <ul>
             <li>{{$item->getData()}}</li>
-            {{--            <li>{{$item->name}}</li>--}}
-            {{--            <li>{{$item->mail}}</li>--}}
-            {{--            <li>{{$item->age}}</li>--}}
         </ul>
+    @endif
 
-    @endforeach
 
 @endsection
 
