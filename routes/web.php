@@ -24,3 +24,5 @@ Route::post("/hello/update", "helloController@update");
 
 Route::get("hello/delete", "helloController@delete");
 Route::post("hello/remove", "helloController@remove");
+
+Route::get("/person", "PersonController@index");
