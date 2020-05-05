@@ -34,3 +34,6 @@ Route::post("/person/add", "PersonController@create");
 
 Route::get("/person/edit", "PersonController@edit");
 Route::post("/person/edit", "PersonController@update");
+
+Route::get("/person/delete", "PersonController@delete");
+Route::post("/person/delete", "PersonController@remove");
