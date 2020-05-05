@@ -8,16 +8,29 @@
 @endsection
 
 @section("content")
-    @foreach($items as $item)
 
-        <ul>
-            <li>{{$item->getData()}}</li>
-            {{--            <li>{{$item->name}}</li>--}}
-            {{--            <li>{{$item->mail}}</li>--}}
-            {{--            <li>{{$item->age}}</li>--}}
-        </ul>
-
-    @endforeach
+    <table border="1">
+        <tr>
+            <th>Person</th>
+            <th>Board</th>
+        </tr>
+        @foreach($items as $item)
+            <tr>
+                <td>{{$item->getData()}}</td>
+                <td>
+                    @if($item->boards != null)
+                        <table border="1">
+                            @foreach($item->boards as $board)
+                                <tr>
+                                    <td>{{$board->getData()}}</td>
+                                </tr>
+                            @endforeach
+                        </table>
+                    @endif
+                </td>
+            </tr>
+        @endforeach
+    </table>
 
 @endsection
 
