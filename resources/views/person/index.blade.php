@@ -9,18 +9,19 @@
 
 @section("content")
 
+    <h2>Boardsがある</h2>
     <table border="1">
         <tr>
             <th>Person</th>
             <th>Board</th>
         </tr>
-        @foreach($items as $item)
+        @foreach($hasItems as $hasItem)
             <tr>
-                <td>{{$item->getData()}}</td>
+                <td>{{$hasItem->getData()}}</td>
                 <td>
-                    @if($item->boards != null)
+                    @if($hasItem->boards != null)
                         <table border="1">
-                            @foreach($item->boards as $board)
+                            @foreach($hasItem->boards as $board)
                                 <tr>
                                     <td>{{$board->getData()}}</td>
                                 </tr>
@@ -31,6 +32,19 @@
             </tr>
         @endforeach
     </table>
+
+    <h2>Boardsが無い</h2>
+    <table border="1">
+        <tr>
+            <th>Person</th>
+        </tr>
+        @foreach($noItems as $noItem)
+            <tr>
+                <td>{{$noItem->getData()}}</td>
+            </tr>
+        @endforeach
+    </table>
+
 
 @endsection
 
