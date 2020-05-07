@@ -44,8 +44,6 @@
             </tr>
         @endforeach
     </table>
-
-
 @endsection
 
 @section("footer")
