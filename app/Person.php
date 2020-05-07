@@ -30,6 +30,8 @@ use function foo\func;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Person nameEqual($str)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Person ageGreaterThan($str)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Person ageLessThan($str)
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Board[] $boards
+ * @property-read int|null $boards_count
  */
 class Person extends Model
 {

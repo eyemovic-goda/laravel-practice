@@ -23,6 +23,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Board whereTitle($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Board whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property-read \App\Person $person
  */
 class Board extends Model
 {
