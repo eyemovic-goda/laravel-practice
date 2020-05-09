@@ -17,6 +17,8 @@
 
     @endforeach
 
+    {{$items->links()}}
+
     <form action="/hello/add" method="post">
         @csrf
 
