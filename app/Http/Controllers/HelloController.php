@@ -13,10 +13,17 @@ class HelloController extends Controller
 {
     public function index(Request $request)
     {
-        $items = Person::orderBy("id", "desc")
-            ->simplePaginate(3);
+        $sort = $request->sort;
+        if (is_null($sort)) {
+            $sort = "id";
+        }
 
-        return view("hello.index", ["items" => $items]);
+        $items = Person::orderBy($sort, "asc")
+            ->paginate(5);
+
+        $param = ["items" => $items, "sort" => $sort];
+
+        return view("hello.index", $param);
     }
 
     public function post(HelloRequest $request)

@@ -8,6 +8,11 @@
 @endsection
 
 @section("content")
+    <a href="/hello?sort=id">id</a>
+    <a href="/hello?sort=name">name</a>
+    <a href="/hello?sort=mail">mail</a>
+    <a href="/hello?sort=age">age</a>
+
     @foreach($items as $item)
         <ul>
             <li>{{$item->name}}</li>
@@ -17,7 +22,7 @@
 
     @endforeach
 
-    {{$items->links()}}
+    {{$items->appends(["sort"=>$sort])->links()}}
 
     <form action="/hello/add" method="post">
         @csrf
