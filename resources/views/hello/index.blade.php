@@ -4,10 +4,19 @@
 
 @section("menubar")
     @parent
-    メニューバー
+    インデックスページ
 @endsection
 
 @section("content")
+    @if(Auth::check())
+        <p>USER:{{$user->name. "(".$user->email . ")"}}</p>
+    @else
+        <p>ログインしてません<a href="/login">ログイン</a> |
+            <a href="/register">登録</a>
+        </p>
+    @endif
+
+
     <a href="/hello?sort=id">id</a>
     <a href="/hello?sort=name">name</a>
     <a href="/hello?sort=mail">mail</a>

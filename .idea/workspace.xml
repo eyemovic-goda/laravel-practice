@@ -19,16 +19,39 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="879f62f8-402d-40fb-8d8d-ff6740b79353" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/bootstrap-4.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/default.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/semantic-ui.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/simple-bootstrap-4.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/simple-default.blade.php" afterDir="false" />
+    <list default="true" id="879f62f8-402d-40fb-8d8d-ff6740b79353" name="Default Changelist" comment="324 paginationのカスタマイズ方法を学習">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HelloController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HelloController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/hello/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/hello/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/helloapp.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/helloapp.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +219,7 @@
       <workItem from="1588339686556" duration="2994000" />
       <workItem from="1588511453761" duration="29792000" />
       <workItem from="1588849622070" duration="3814000" />
-      <workItem from="1589008710796" duration="5661000" />
+      <workItem from="1589008710796" duration="8859000" />
     </task>
     <task id="LOCAL-00001" summary="テスト">
       <created>1582155805735</created>
@@ -485,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589037897067</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="324 paginationのカスタマイズ方法を学習">
+      <created>1589091569620</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1589091569620</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,7 +535,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="cookieの使い方" />
     <MESSAGE value="DBのセレクト文を学習" />
     <MESSAGE value="addメソッドを学習" />
     <MESSAGE value="orWhereを学習" />
@@ -530,7 +559,8 @@
     <MESSAGE value="312 セッションの扱いについて学習" />
     <MESSAGE value="320 simplePageNationを学習" />
     <MESSAGE value="321 paginateを使ってみた" />
-    <option name="LAST_COMMIT_MESSAGE" value="321 paginateを使ってみた" />
+    <MESSAGE value="324 paginationのカスタマイズ方法を学習" />
+    <option name="LAST_COMMIT_MESSAGE" value="324 paginationのカスタマイズ方法を学習" />
   </component>
   <component name="WindowStateProjectService">
     <state x="705" y="388" key="#SQL_Dialects" timestamp="1588252062646">
@@ -550,14 +580,14 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1228" y="484" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1588570738309" />
-    <state x="1333" y="161" key="CommitChangelistDialog2" timestamp="1589037896703">
+    <state x="1333" y="161" key="CommitChangelistDialog2" timestamp="1589094698060">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1027" y="126" key="CommitChangelistDialog2/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1588772285938" />
     <state x="-893" y="126" key="CommitChangelistDialog2/-664.1103.1440.877/-1920.23.1920.1057/0.23.1920.1057@-1920.23.1920.1057" timestamp="1587460004215" />
     <state x="855" y="123" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1588690391136" />
     <state x="1000" y="126" key="CommitChangelistDialog2/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1588856515262" />
-    <state x="1333" y="161" key="CommitChangelistDialog2/0.23.2560.1417/-1080.-227.1080.1897@0.23.2560.1417" timestamp="1589037896703" />
+    <state x="1333" y="161" key="CommitChangelistDialog2/0.23.2560.1417/-1080.-227.1080.1897@0.23.2560.1417" timestamp="1589094698060" />
     <state x="384" y="118" key="DiffContextDialog" timestamp="1588854503647">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
@@ -596,14 +626,14 @@
     </state>
     <state x="388" y="195" key="SettingsEditor/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1587648027136" />
     <state x="388" y="195" key="SettingsEditor/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1587517944076" />
-    <state x="1387" y="382" key="Vcs.Push.Dialog.v2" timestamp="1589037898847">
+    <state x="1387" y="382" key="Vcs.Push.Dialog.v2" timestamp="1589091571114">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1040" y="291" key="Vcs.Push.Dialog.v2/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1588772287668" />
     <state x="-880" y="291" key="Vcs.Push.Dialog.v2/-664.1103.1440.877/-1920.23.1920.1057/0.23.1920.1057@-1920.23.1920.1057" timestamp="1587460008043" />
     <state x="880" y="283" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1588690393045" />
     <state x="1040" y="291" key="Vcs.Push.Dialog.v2/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1588856516811" />
-    <state x="1387" y="382" key="Vcs.Push.Dialog.v2/0.23.2560.1417/-1080.-227.1080.1897@0.23.2560.1417" timestamp="1589037898847" />
+    <state x="1387" y="382" key="Vcs.Push.Dialog.v2/0.23.2560.1417/-1080.-227.1080.1897@0.23.2560.1417" timestamp="1589091571114" />
     <state x="1140" y="308" width="637" height="486" key="find.popup" timestamp="1588049011145">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
@@ -612,13 +642,13 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="1091" y="333" key="refactoring.ChangeSignatureDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1588688272862" />
-    <state x="1473" y="338" width="894" height="907" key="search.everywhere.popup" timestamp="1589090734762">
+    <state x="1473" y="338" width="894" height="907" key="search.everywhere.popup" timestamp="1589097398965">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1588772218922" />
     <state x="-815" y="258" width="670" height="676" key="search.everywhere.popup/-664.1103.1440.877/-1920.23.1920.1057/0.23.1920.1057@-1920.23.1920.1057" timestamp="1587459975087" />
     <state x="967" y="251" width="670" height="657" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1588690374252" />
     <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1588856495943" />
-    <state x="1473" y="338" width="894" height="907" key="search.everywhere.popup/0.23.2560.1417/-1080.-227.1080.1897@0.23.2560.1417" timestamp="1589090734762" />
+    <state x="1473" y="338" width="894" height="907" key="search.everywhere.popup/0.23.2560.1417/-1080.-227.1080.1897@0.23.2560.1417" timestamp="1589097398965" />
   </component>
 </project>
