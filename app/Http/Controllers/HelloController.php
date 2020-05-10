@@ -110,7 +110,13 @@ class HelloController extends Controller
 
     public function getAuth(Request $request)
     {
-        $param = ["message" => "ログインしてください。"];
+        $message = "ログインしてください";
+
+        if (Auth::check()) {
+            $message = "ログイン済みです";
+        }
+
+        $param = ["message" => $message];
         return view("hello.auth", $param);
     }
 
