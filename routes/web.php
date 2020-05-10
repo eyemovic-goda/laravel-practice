@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'welcome');
 
 
-Route::get("/hello", "helloController@index");
+Route::get("/hello", "helloController@index")->middleware("auth");
 Route::post("/hello", "helloController@post");
 Route::post("/hello/add", "helloController@add");
 Route::get("/hello/add", "helloController@index");
