@@ -50,3 +50,6 @@ Route::post("/hello/session", "helloController@ses_post");
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/hello/auth', 'HelloController@getAuth');
+Route::post('/hello/auth', 'HelloController@postAuth');
