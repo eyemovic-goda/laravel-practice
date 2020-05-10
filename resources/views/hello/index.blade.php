@@ -22,7 +22,7 @@
 
     @endforeach
 
-    {{$items->appends(["sort"=>$sort])->links()}}
+    {{$items->appends(["sort"=>$sort])->links("vendor.pagination.bootstrap-4")}}
 
     <form action="/hello/add" method="post">
         @csrf
